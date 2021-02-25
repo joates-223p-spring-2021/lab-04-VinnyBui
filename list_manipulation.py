@@ -12,6 +12,24 @@ import lists
 
 sports_teams = [lists.football_teams, lists.baseball_teams, lists.basketball_teams]
 
+newList = [w.replace('hot dogs','bratwurst') for w in lists.school_lunches]
+print(newList)
+
+for q, a in zip(lists.questions, lists.answers):
+  print("What is your {} ? My {} is {}.".format(q,q,a))
+
+NYlist = []
+for q in range(len(sports_teams)):
+  for x in range(len(sports_teams[q])):
+    if 'New York' in sports_teams[q][x]:
+      NYlist.append(sports_teams[q][x])
+print(NYlist)
+LAlist = []
+for q in range(len(sports_teams)):
+  for x in range(len(sports_teams[q])):
+    if 'Los Angeles' in sports_teams[q][x]:
+      LAlist.append(sports_teams[q][x])
+print(LAlist)
 # Print out all the school lunches on the menu, but substitute bratwurst 
 # wherever you see hot dogs
 # Use list comprehension. Just print the list directly so the output will
