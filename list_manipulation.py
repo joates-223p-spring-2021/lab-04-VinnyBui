@@ -16,7 +16,7 @@ newList = [w.replace('hot dogs','bratwurst') for w in lists.school_lunches]
 print(newList)
 
 for q, a in zip(lists.questions, lists.answers):
-  print("What is your {} ? My {} is {}.".format(q,q,a))
+  print("What is your {}? My {} is {}".format(q,q,a))
 
 NYlist = []
 for q in range(len(sports_teams)):
